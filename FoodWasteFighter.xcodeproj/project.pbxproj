@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CC727C88DA4003627F2 /* TabBar.swift */; };
+		424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CCA27C88F83003627F2 /* TabItem.swift */; };
 		42728C5A27C74B8200FAD307 /* FoodWasteFighterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */; };
 		42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5B27C74B8200FAD307 /* ContentView.swift */; };
 		42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C5D27C74B8300FAD307 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		424C9CC727C88DA4003627F2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		424C9CCA27C88F83003627F2 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		42728C5627C74B8200FAD307 /* FoodWasteFighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodWasteFighter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteFighterApp.swift; sourceTree = "<group>"; };
 		42728C5B27C74B8200FAD307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		424C9CC927C88F7A003627F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				424C9CCA27C88F83003627F2 /* TabItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		42728C4D27C74B8200FAD307 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 			children = (
 				42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */,
 				42728C5B27C74B8200FAD307 /* ContentView.swift */,
+				424C9CC927C88F7A003627F2 /* Models */,
 				424C9CC627C88D63003627F2 /* Components */,
 				42728C5D27C74B8300FAD307 /* Assets.xcassets */,
 				42728C5F27C74B8300FAD307 /* Preview Content */,
@@ -150,6 +161,7 @@
 			files = (
 				424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */,
 				42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */,
+				424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */,
 				42728C5A27C74B8200FAD307 /* FoodWasteFighterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
