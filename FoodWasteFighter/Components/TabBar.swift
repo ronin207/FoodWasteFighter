@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBar: View {
     @State var selectedTab: Tab = .home
-    @State var color: Color = .mint
+    @State var color: Color = .leaf
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -73,7 +73,7 @@ extension TabBar {
                         .frame(width: 44, height: 29)
                     Text(item.text)
                         .fontSelection(type: .shadowsLight2, size: 15)
-                        .foregroundColor(selectedTab == item.tab ? .primary : .clear)
+                        .foregroundColor(selectedTab == item.tab ? .black : .clear)
                 }
                 .frame(maxWidth: .infinity)
             }
