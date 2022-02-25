@@ -72,8 +72,8 @@ extension TabBar {
                         .font(.body.bold())
                         .frame(width: 44, height: 29)
                     Text(item.text)
-                        .font(.caption2)
-                        .lineLimit(1)
+                        .fontSelection(type: .shadowsLight2, size: 15)
+                        .foregroundColor(selectedTab == item.tab ? .primary : .clear)
                 }
                 .frame(maxWidth: .infinity)
             }
