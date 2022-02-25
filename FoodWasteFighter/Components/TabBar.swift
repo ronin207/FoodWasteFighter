@@ -47,12 +47,8 @@ extension TabBar {
         .padding(.top, 14)
         .frame(height: 88, alignment: .top)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
-        .background {
-            circularHighlight
-        }
-        .overlay {
-            rectangularHighlight
-        }
+        .background(circularHighlight)
+        .overlay(rectangularHighlight)
         .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
     }
