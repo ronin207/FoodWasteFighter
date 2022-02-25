@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CC727C88DA4003627F2 /* TabBar.swift */; };
 		424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CCA27C88F83003627F2 /* TabItem.swift */; };
+		424C9CDE27C8C080003627F2 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */; };
+		424C9CE027C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424C9CDF27C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf */; };
+		424C9CE327C8C0E5003627F2 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CE227C8C0E5003627F2 /* Fonts.swift */; };
 		42728C5A27C74B8200FAD307 /* FoodWasteFighterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */; };
 		42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5B27C74B8200FAD307 /* ContentView.swift */; };
 		42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C5D27C74B8300FAD307 /* Assets.xcassets */; };
@@ -18,6 +21,10 @@
 /* Begin PBXFileReference section */
 		424C9CC727C88DA4003627F2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		424C9CCA27C88F83003627F2 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		424C9CDF27C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShadowsIntoLightTwo-Regular.ttf"; sourceTree = "<group>"; };
+		424C9CE127C8C0A7003627F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		424C9CE227C8C0E5003627F2 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		42728C5627C74B8200FAD307 /* FoodWasteFighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodWasteFighter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteFighterApp.swift; sourceTree = "<group>"; };
 		42728C5B27C74B8200FAD307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				424C9CC727C88DA4003627F2 /* TabBar.swift */,
+				424C9CE227C8C0E5003627F2 /* Fonts.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -50,6 +58,15 @@
 				424C9CCA27C88F83003627F2 /* TabItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		424C9CDC27C8C050003627F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				424C9CDF27C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf */,
+				424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		42728C4D27C74B8200FAD307 = {
@@ -71,10 +88,12 @@
 		42728C5827C74B8200FAD307 /* FoodWasteFighter */ = {
 			isa = PBXGroup;
 			children = (
+				424C9CE127C8C0A7003627F2 /* Info.plist */,
 				42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */,
 				42728C5B27C74B8200FAD307 /* ContentView.swift */,
 				424C9CC927C88F7A003627F2 /* Models */,
 				424C9CC627C88D63003627F2 /* Components */,
+				424C9CDC27C8C050003627F2 /* Resources */,
 				42728C5D27C74B8300FAD307 /* Assets.xcassets */,
 				42728C5F27C74B8300FAD307 /* Preview Content */,
 			);
@@ -148,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				42728C6127C74B8300FAD307 /* Preview Assets.xcassets in Resources */,
+				424C9CDE27C8C080003627F2 /* OpenSans-Regular.ttf in Resources */,
 				42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */,
+				424C9CE027C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */,
+				424C9CE327C8C0E5003627F2 /* Fonts.swift in Sources */,
 				42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */,
 				424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */,
 				42728C5A27C74B8200FAD307 /* FoodWasteFighterApp.swift in Sources */,
@@ -296,6 +318,7 @@
 				DEVELOPMENT_TEAM = 4DVD7FVTR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodWasteFighter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -325,6 +348,7 @@
 				DEVELOPMENT_TEAM = 4DVD7FVTR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodWasteFighter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
