@@ -12,6 +12,34 @@ struct TabBar: View {
     @State var color: Color = .mint
     
     var body: some View {
+        ZStack(alignment: .bottom) {
+            Group {
+                switch selectedTab {
+                case .home:
+                    Text("Home")
+                case .store:
+                    Text("Store")
+                case .blog:
+                    Text("Blog")
+                case .profile:
+                    Text("Profile")
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            
+            tabbar
+        }
+    }
+}
+
+struct TabBar_Previews: PreviewProvider {
+    static var previews: some View {
+        TabBar()
+    }
+}
+
+extension TabBar {
+    private var tabbar: some View {
         HStack {
             tabButton
         }
@@ -28,15 +56,7 @@ struct TabBar: View {
         .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
     }
-}
-
-struct TabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar()
-    }
-}
-
-extension TabBar {
+    
     private var tabButton: some View {
         ForEach(tabItems) { item in
             Button {
