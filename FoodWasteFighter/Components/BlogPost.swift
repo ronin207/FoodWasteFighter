@@ -19,7 +19,7 @@ struct BlogPost: View {
             HStack(spacing: 10) {
                 Image(systemName: "person.circle")
                     .resizable()
-                    .frame(width: 30, height: 30)
+                    .frame(width: 25, height: 25)
                 Text(name)
                     .fontSelection(size: 25)
             }
