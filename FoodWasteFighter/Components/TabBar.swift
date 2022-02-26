@@ -20,7 +20,7 @@ struct TabBar: View {
                 case .store:
                     Text("Store")
                 case .blog:
-                    Text("Blog")
+                    BlogView()
                 case .profile:
                     Text("Profile")
                 }
@@ -45,7 +45,7 @@ extension TabBar {
         }
         .padding(.horizontal, 8)
         .padding(.top, 14)
-        .frame(height: 88, alignment: .top)
+        .frame(height: 80, alignment: .top)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
         .background(circularHighlight)
         .overlay(rectangularHighlight)
