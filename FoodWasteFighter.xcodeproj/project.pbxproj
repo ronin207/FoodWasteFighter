@@ -45,6 +45,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42420D5427C9DD5D00DED18D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		424C9CC627C88D63003627F2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +108,7 @@
 				424C9CE127C8C0A7003627F2 /* Info.plist */,
 				42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */,
 				42728C5B27C74B8200FAD307 /* ContentView.swift */,
+				42420D5427C9DD5D00DED18D /* Views */,
 				424C9CC927C88F7A003627F2 /* Models */,
 				424C9CC627C88D63003627F2 /* Components */,
 				424C9CE427C921D5003627F2 /* Extensions */,
