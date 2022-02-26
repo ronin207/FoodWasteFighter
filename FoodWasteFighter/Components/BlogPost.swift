@@ -67,6 +67,7 @@ struct BlogPost: View {
         }
         .background(.ultraThinMaterial)
         .cornerRadius(5.0)
+        .shadow(color: .black.opacity(0.4), radius: 5, x: 0, y: 0)
     }
 }
 
@@ -79,11 +80,8 @@ struct BlogPost_Previews: PreviewProvider {
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVStack(spacing: 10) {
                     BlogPost(name: "ABCD Store", description: "Here’s an idea for browned avocadoes- make guacamole!")
-                        .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 0)
                     BlogPost(name: "Navya Ann", description: "Hey guys! we just had a graduation party and we have some extra food- link in my bio!")
-                        .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 0)
                     BlogPost(name: "ABCD Store", description: "Here’s an idea for browned avocadoes- make guacamole!")
-                        .shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 0)
                 }
             }
             .padding(5)
