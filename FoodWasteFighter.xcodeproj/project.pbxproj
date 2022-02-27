@@ -20,6 +20,9 @@
 		42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5B27C74B8200FAD307 /* ContentView.swift */; };
 		42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C5D27C74B8300FAD307 /* Assets.xcassets */; };
 		42728C6127C74B8300FAD307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C6027C74B8300FAD307 /* Preview Assets.xcassets */; };
+		42E863D327CB78A60094F288 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */; };
+		42E863D427CB78A60094F288 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */; };
+		42E863D527CB78A60094F288 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D227CB78A60094F288 /* OpenSans-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		42728C5B27C74B8200FAD307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42728C5D27C74B8300FAD307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42728C6027C74B8300FAD307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		42E863D227CB78A60094F288 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 		424C9CDC27C8C050003627F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */,
+				42E863D227CB78A60094F288 /* OpenSans-Light.ttf */,
+				42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */,
 				424C9CDF27C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf */,
 				424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */,
 			);
@@ -196,6 +205,9 @@
 			files = (
 				42728C6127C74B8300FAD307 /* Preview Assets.xcassets in Resources */,
 				424C9CDE27C8C080003627F2 /* OpenSans-Regular.ttf in Resources */,
+				42E863D527CB78A60094F288 /* OpenSans-Light.ttf in Resources */,
+				42E863D427CB78A60094F288 /* OpenSans-Bold.ttf in Resources */,
+				42E863D327CB78A60094F288 /* OpenSans-SemiBold.ttf in Resources */,
 				42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */,
 				424C9CE027C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf in Resources */,
 			);
