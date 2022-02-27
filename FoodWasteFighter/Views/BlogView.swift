@@ -32,7 +32,7 @@ struct BlogView: View {
                         
                         Image(systemName: "message.and.waveform.fill")
                             .foregroundColor(.white)
-                            .padding(7)
+                            .padding(4)
                             .background(.ultraThinMaterial, in: Circle())
                     }
                 }
