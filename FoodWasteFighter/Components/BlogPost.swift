@@ -17,9 +17,9 @@ struct BlogPost: View {
             HStack(spacing: 10) {
                 Image(systemName: image)
                     .resizable()
-                    .frame(width: 25, height: 25)
+                    .frame(width: 20, height: 20)
                 Text(name)
-                    .fontSelection(size: 25)
+                    .fontSelection(size: 20)
             }
             .padding(.horizontal)
             .padding(.vertical, 3)
@@ -28,22 +28,38 @@ struct BlogPost: View {
             Rectangle()
                 .frame(maxWidth: .infinity)
                 .frame(height: 150)
+                .padding(7)
             
             VStack(spacing: 10) {
+                HStack(spacing: 16) {
+                    Image(systemName: "heart")
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                    
+                    Image(systemName: "message")
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "bookmark")
+                        .resizable()
+                        .frame(width: 20, height: 25)
+                }
+                
                 HStack(alignment: .top, spacing: 30) {
                     Text(name)
                         .fontSelection(type: .shadowsLight2, size: 18)
                     Text(description)
                         .fontSelection(size: 13)
                 }
-                .padding(.horizontal)
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .padding(.vertical)
+            .padding([.vertical, .horizontal])
         }
         .background(.ultraThinMaterial)
         .cornerRadius(5.0)
-        .shadow(color: .black.opacity(0.4), radius: 5, x: 0, y: 0)
+        .shadow(color: .black.opacity(0.3), radius: 4, x: 0, y: 0)
     }
 }
 
