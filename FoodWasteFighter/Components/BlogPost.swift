@@ -49,18 +49,6 @@ struct BlogPost: View {
 
 struct BlogPost_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [.green, .mint, .pink]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
-            ScrollView(.vertical, showsIndicators: false) {
-                LazyVStack(spacing: 10) {
-                    BlogPost(image: "person.circle", name: "ABCD Store", description: "Here’s an idea for browned avocadoes- make guacamole!")
-                    BlogPost(image: "person.circle.fill", name: "Navya Ann", description: "Hey guys! we just had a graduation party and we have some extra food- link in my bio!")
-                    BlogPost(image: "person", name: "ABCD Store", description: "Here’s an idea for browned avocadoes- make guacamole!")
-                }
-            }
-            .ignoresSafeArea(.container, edges: .bottom)
-        }
+        BlogPost(image: "person.circle", name: "ABCD Store", description: "Here’s an idea for browned avocadoes- make guacamole!")
     }
 }
