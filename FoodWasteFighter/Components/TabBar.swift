@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct TabBar: View {
-    @State var selectedTab: Tab = .home
+    @State var selectedTab: Tab = .map
     @State var color: Color = .leaf
     
     var body: some View {
         ZStack(alignment: .bottom) {
             Group {
                 switch selectedTab {
-                case .home:
-                    Text("Home")
+                case .map:
+                    Text("Map")
                 case .store:
                     Text("Store")
                 case .blog:
@@ -90,7 +90,7 @@ extension TabBar {
             Circle()
                 .fill(color)
                 .frame(width: 88)
-            if selectedTab == .home { Spacer() }
+            if selectedTab == .map { Spacer() }
             if selectedTab == .store {
                 Spacer()
                 Spacer()
@@ -115,7 +115,7 @@ extension TabBar {
                 .cornerRadius(3)
                 .frame(width: 88)
                 .frame(maxHeight: .infinity, alignment: .top)
-            if selectedTab == .home { Spacer() }
+            if selectedTab == .map { Spacer() }
             if selectedTab == .store {
                 Spacer()
                 Spacer()
