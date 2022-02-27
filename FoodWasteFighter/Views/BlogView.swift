@@ -19,7 +19,7 @@ struct BlogView: View {
             }
             .listStyle(.plain)
             .background {
-                LinearGradient(gradient: Gradient(colors: [.green, .mint, .pink]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(gradient: Gradient(colors: [.mint, .cyan]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .ignoresSafeArea()
             }
             .toolbar(content: {
