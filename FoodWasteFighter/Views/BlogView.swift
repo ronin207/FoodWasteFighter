@@ -8,30 +8,27 @@
 import SwiftUI
 
 struct BlogView: View {
-    @State private var isLoading: Bool = false
+    @State private var text: String = ""
     
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [.green, .mint, .pink]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
-            ScrollView(.vertical, showsIndicators: false) {
-                LazyVStack(spacing: 10) {
-                    ForEach(BlogItem.blogs) { blog in
-                        if self.isLoading {
+        NavigationView {
+            VStack {
+                TextField("Search Posts", text: $text)
+                    .textFieldStyle(.roundedBorder)
+                ScrollView(.vertical, showsIndicators: false) {
+                    LazyVStack(spacing: 10) {
+                        ForEach(BlogItem.blogs) { blog in
                             BlogPost(image: blog.image, name: blog.name, description: blog.description)
                         }
                     }
                 }
             }
-            .padding(5)
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-                    withAnimation(.easeInOut) {
-                        self.isLoading = true
-                    }
-                }
+            .padding(10)
+            .background {
+                LinearGradient(gradient: Gradient(colors: [.green, .mint, .pink]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
             }
+            .navigationBarHidden(true)
         }
     }
 }
