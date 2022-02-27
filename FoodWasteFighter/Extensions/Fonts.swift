@@ -9,6 +9,9 @@ import SwiftUI
 
 enum FontType: String {
     case opensans = "OpenSans-Regular"
+    case opensansLight = "OpenSans-Light"
+    case opensansBold = "OpenSans-Bold"
+    case opensansSemiBold = "OpenSans-SemiBold"
     case shadowsLight2 = "ShadowsIntoLightTwo-Regular"
 }
 
@@ -33,6 +36,15 @@ struct Fonts_Previews: PreviewProvider {
         VStack(spacing: 20) {
             Text("Open Sans")
                 .fontSelection(type: .opensans, size: 20)
+            
+            Text("Open Sans Light")
+                .fontSelection(type: .opensansLight, size: 20)
+            
+            Text("Open Sans Bold")
+                .fontSelection(type: .opensansBold, size: 20)
+            
+            Text("Open Sans SemiBold")
+                .fontSelection(type: .opensansSemiBold, size: 20)
             
             Text("Shadow Into Light 2")
                 .fontSelection(type: .shadowsLight2, size: 20)
