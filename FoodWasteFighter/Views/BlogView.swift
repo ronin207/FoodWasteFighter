@@ -40,6 +40,7 @@ struct BlogView: View {
             .navigationTitle("Blog")
         }
         .searchable(text: $text, placement: .navigationBarDrawer(displayMode: .always))
+        .fontSelection(type: .opensans, size: 17)
     }
 }
 
