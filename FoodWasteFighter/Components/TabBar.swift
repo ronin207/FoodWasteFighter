@@ -22,7 +22,7 @@ struct TabBar: View {
                 case .blog:
                     BlogView()
                 case .profile:
-                    Text("Profile")
+                    ProfileView()
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
