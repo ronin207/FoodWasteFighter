@@ -32,19 +32,31 @@ struct BlogPost: View {
             
             VStack(spacing: 10) {
                 HStack(spacing: 16) {
-                    Image(systemName: "heart")
-                        .resizable()
-                        .frame(width: 25, height: 25)
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "heart")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                    }
                     
-                    Image(systemName: "message")
-                        .resizable()
-                        .frame(width: 25, height: 25)
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "message")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                    }
                     
                     Spacer()
                     
-                    Image(systemName: "bookmark")
-                        .resizable()
-                        .frame(width: 20, height: 25)
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "bookmark")
+                            .resizable()
+                            .frame(width: 20, height: 25)
+                    }
                 }
                 
                 HStack(alignment: .top, spacing: 30) {

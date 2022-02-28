@@ -25,15 +25,23 @@ struct BlogView: View {
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack(spacing: 20) {
-                        Image(systemName: "plus")
-                            .foregroundColor(.white)
-                            .padding(7)
-                            .background(.ultraThinMaterial, in: Circle())
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "plus")
+                                .foregroundColor(.white)
+                                .padding(7)
+                                .background(.ultraThinMaterial, in: Circle())
+                        }
                         
-                        Image(systemName: "message.and.waveform.fill")
-                            .foregroundColor(.white)
-                            .padding(4)
-                            .background(.ultraThinMaterial, in: Circle())
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "message.and.waveform.fill")
+                                .foregroundColor(.white)
+                                .padding(4)
+                                .background(.ultraThinMaterial, in: Circle())
+                        }
                     }
                 }
             })
