@@ -16,6 +16,31 @@ struct BlogView: View {
                 BlogPost(image: blog.image, name: blog.name, description: blog.description)
                     .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
+                    .swipeActions(edge: .leading, allowsFullSwipe: false) {
+                        HStack {
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "heart")
+                            }
+                            .tint(Color.pink)
+                            
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "message")
+                            }
+                            .tint(Color.blue)
+                        }
+                    }
+                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "bookmark")
+                        }
+                        .tint(Color.orange)
+                    }
             }
             .listStyle(.plain)
             .background {
