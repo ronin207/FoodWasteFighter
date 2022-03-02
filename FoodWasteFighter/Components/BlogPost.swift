@@ -31,34 +31,6 @@ struct BlogPost: View {
                 .padding(7)
             
             VStack(spacing: 10) {
-                HStack(spacing: 16) {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "heart")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                    }
-                    
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "message")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                    }
-                    
-                    Spacer()
-                    
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "bookmark")
-                            .resizable()
-                            .frame(width: 20, height: 25)
-                    }
-                }
-                
                 HStack(alignment: .top, spacing: 30) {
                     Text(name)
                         .fontSelection(type: .shadowsLight2, size: 18)
