@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @State private var selectedAccounts: Posts = .own
+    @State private var isPresented: Bool = false
     var columns = Array(repeating: GridItem(.flexible()), count: 3)
     
     var body: some View {
@@ -52,14 +53,59 @@ struct ProfileView: View {
                     
                     ScrollView(.vertical, showsIndicators: false) {
                         LazyVGrid(columns: columns, spacing: 5) {
-                            ForEach(0..<12) { _ in
-                                RoundedRectangle(cornerRadius: 10.0)
-                                    .frame(width: 120, height: 120)
+                            if selectedAccounts == .own {
+                                ForEach(0..<12) { _ in
+                                    RoundedRectangle(cornerRadius: 10.0)
+                                        .frame(width: 120, height: 120)
+                                }
+                            } else if selectedAccounts == .saved {
+                                ForEach(0..<7) { _ in
+                                    RoundedRectangle(cornerRadius: 10.0)
+                                        .frame(width: 120, height: 120)
+                                }
+                            } else if selectedAccounts == .followed {
+                                ForEach(0..<26) { _ in
+                                    RoundedRectangle(cornerRadius: 10.0)
+                                        .frame(width: 120, height: 120)
+                                }
                             }
                         }
                     }
                 }
                 .padding(.horizontal, 5)
+            }
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Image(systemName: "gear")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .onTapGesture {
+                            isPresented.toggle()
+                        }
+                }
+            })
+            .sheet(isPresented: $isPresented) {
+                NavigationView {
+                    Form {
+                        Section {
+                            
+                        } header: { Text("Account") }
+                        
+                        Section {
+                            
+                        } header: { Text("Privacy") }
+                        
+                        Section {
+                            
+                        } header: { Text("Help") }
+                        
+                        Section {
+                            
+                        } header: { Text("About") }
+                        
+                    }
+                    .navigationTitle("Settings")
+                }
             }
         }
     }
