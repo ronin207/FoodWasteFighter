@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421245E527D29A9E00D1708E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421245E427D29A9E00D1708E /* MapView.swift */; };
 		42420D5627C9DDC300DED18D /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5527C9DDC300DED18D /* BlogPost.swift */; };
 		42420D5827C9FD9A00DED18D /* BlogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5727C9FD9A00DED18D /* BlogItem.swift */; };
 		42420D5A27C9FF7000DED18D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5927C9FF7000DED18D /* BlogView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421245E427D29A9E00D1708E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		42420D5527C9DDC300DED18D /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		42420D5727C9FD9A00DED18D /* BlogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogItem.swift; sourceTree = "<group>"; };
 		42420D5927C9FF7000DED18D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				42420D5927C9FF7000DED18D /* BlogView.swift */,
 				42E863D627CB7B810094F288 /* ProfileView.swift */,
+				421245E427D29A9E00D1708E /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */,
 				424C9CE627C92258003627F2 /* Colors.swift in Sources */,
 				42E863D727CB7B810094F288 /* ProfileView.swift in Sources */,
+				421245E527D29A9E00D1708E /* MapView.swift in Sources */,
 				424C9CE327C8C0E5003627F2 /* Fonts.swift in Sources */,
 				42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */,
 				42420D5827C9FD9A00DED18D /* BlogItem.swift in Sources */,
