@@ -12,9 +12,9 @@ struct BlogView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(0..<5) { _ in
+                ForEach(BlogItem.blogs) { blog in
                     NavigationLink(destination: Text("Hello")) {
-                        BlogPost()
+                        BlogPost(blog: blog)
                     }
                     .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
