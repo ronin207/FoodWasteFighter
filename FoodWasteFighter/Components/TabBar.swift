@@ -63,10 +63,11 @@ extension TabBar {
             } label: {
                 // MARK: Tab Item Label
                 VStack(spacing: 0) {
-                    Image(systemName: item.image)
-                        .symbolVariant(.fill)
+                    Image(item.image)
+                        .resizable()
+                        .renderingMode(.template)
                         .font(.body.bold())
-                        .frame(width: 44, height: 29)
+                        .frame(width: 28, height: 29)
                     Text(item.text)
                         .fontSelection(type: .shadowsLight2, size: 15)
                         .foregroundColor(selectedTab == item.tab ? .black : .clear)
