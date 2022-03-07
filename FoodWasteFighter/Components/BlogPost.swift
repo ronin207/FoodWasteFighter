@@ -11,7 +11,7 @@ struct BlogPost: View {
     let blog: BlogItem
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             AsyncImage(url: blog.url) { phase in
                 switch phase {
                 case .empty:
