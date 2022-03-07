@@ -9,71 +9,44 @@ import SwiftUI
 
 struct BlogView: View {
     @State private var text: String = ""
-    
     var body: some View {
         NavigationView {
-            List(BlogItem.blogs) { blog in
-                BlogPost(image: blog.image, name: blog.name, description: blog.description)
+            List {
+                ForEach(0..<5) { _ in
+                    NavigationLink(destination: Text("Hello")) {
+                        BlogPost()
+                    }
                     .listRowSeparator(.hidden)
                     .listRowBackground(Color.clear)
-                    .swipeActions(edge: .leading, allowsFullSwipe: false) {
-                        HStack {
-                            Button {
-                                
-                            } label: {
-                                Image(systemName: "heart")
-                            }
-                            .tint(Color.pink)
-                            
-                            Button {
-                                
-                            } label: {
-                                Image(systemName: "message")
-                            }
-                            .tint(Color.blue)
-                        }
-                    }
-                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                    .swipeActions {
                         Button {
                             
                         } label: {
                             Image(systemName: "bookmark")
                         }
-                        .tint(Color.orange)
+                        .tint(.orange)
                     }
-            }
-            .listStyle(.plain)
-            .background {
-                LinearGradient(gradient: Gradient(colors: [.mint, .cyan]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                    .ignoresSafeArea()
-            }
-            .toolbar(content: {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    HStack(spacing: 20) {
+                    .swipeActions(edge: .leading) {
                         Button {
                             
                         } label: {
-                            Image(systemName: "plus")
-                                .foregroundColor(.white)
-                                .padding(7)
-                                .background(.ultraThinMaterial, in: Circle())
+                            Image(systemName: "heart")
                         }
+                        .tint(.pink)
                         
                         Button {
                             
                         } label: {
-                            Image(systemName: "message.and.waveform.fill")
-                                .foregroundColor(.white)
-                                .padding(4)
-                                .background(.ultraThinMaterial, in: Circle())
+                            Image(systemName: "message")
                         }
+                        .tint(.clover)
                     }
                 }
-            })
-            .navigationTitle("Blog")
+            }
+            .listStyle(.plain)
+            .navigationTitle("Blogs")
         }
         .searchable(text: $text, placement: .navigationBarDrawer(displayMode: .always))
-        .fontSelection(type: .opensans, size: 17)
     }
 }
 

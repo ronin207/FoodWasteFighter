@@ -8,47 +8,50 @@
 import SwiftUI
 
 struct BlogPost: View {
-    let image: String
-    let name: String
-    let description: String
+    let url = URL(string: "https://picsum.photos/300")
     
     var body: some View {
-        VStack(spacing: 0) {
-            HStack(spacing: 10) {
-                Image(systemName: image)
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                Text(name)
-                    .fontSelection(size: 20)
-            }
-            .padding(.horizontal)
-            .padding(.vertical, 3)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Rectangle()
-                .frame(maxWidth: .infinity)
-                .frame(height: 150)
-                .padding(7)
-            
-            VStack(spacing: 10) {
-                HStack(alignment: .top, spacing: 30) {
-                    Text(name)
-                        .fontSelection(type: .shadowsLight2, size: 18)
-                    Text(description)
-                        .fontSelection(size: 13)
+        HStack(alignment: .top) {
+            AsyncImage(url: url) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                case .success(let image):
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 70, height: 70)
+                        .cornerRadius(10)
+                case .failure:
+                    Image(systemName: "exclamationmark")
+                        .font(.headline)
+                default:
+                    Image(systemName: "questionmark")
+                        .font(.headline)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .padding([.vertical, .horizontal])
+            
+            VStack(alignment: .leading, spacing: 5) {
+                HStack {
+                    Text("ABCD Store")
+                        .fontSelection(type: .shadowsLight2, size: 20)
+                }
+                
+                Text("Hello all, welcome to ABCD Store! Here you can get the best deals!")
+                    .fontSelection(size: 14)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(3)
+            }
         }
+        .padding(7)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.ultraThinMaterial)
-        .cornerRadius(5.0)
-        .shadow(color: .black.opacity(0.3), radius: 4, x: 0, y: 0)
+        .cornerRadius(10)
     }
 }
 
 struct BlogPost_Previews: PreviewProvider {
     static var previews: some View {
-        BlogPost(image: "person.circle", name: "ABCD Store", description: "Here’s an idea for browned avocadoes- make guacamole!")
+        BlogPost()
     }
 }
