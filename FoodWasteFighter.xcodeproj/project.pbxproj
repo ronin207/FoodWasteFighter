@@ -11,6 +11,7 @@
 		42420D5627C9DDC300DED18D /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5527C9DDC300DED18D /* BlogPost.swift */; };
 		42420D5827C9FD9A00DED18D /* BlogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5727C9FD9A00DED18D /* BlogItem.swift */; };
 		42420D5A27C9FF7000DED18D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5927C9FF7000DED18D /* BlogView.swift */; };
+		42438A4227D79E61005B79D7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42438A4127D79E61005B79D7 /* ImagePicker.swift */; };
 		424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CC727C88DA4003627F2 /* TabBar.swift */; };
 		424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CCA27C88F83003627F2 /* TabItem.swift */; };
 		424C9CDE27C8C080003627F2 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */; };
@@ -32,6 +33,7 @@
 		42420D5527C9DDC300DED18D /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
 		42420D5727C9FD9A00DED18D /* BlogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogItem.swift; sourceTree = "<group>"; };
 		42420D5927C9FF7000DED18D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
+		42438A4127D79E61005B79D7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		424C9CC727C88DA4003627F2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		424C9CCA27C88F83003627F2 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				424C9CC727C88DA4003627F2 /* TabBar.swift */,
 				42420D5527C9DDC300DED18D /* BlogPost.swift */,
+				42438A4127D79E61005B79D7 /* ImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				42420D5827C9FD9A00DED18D /* BlogItem.swift in Sources */,
 				42420D5627C9DDC300DED18D /* BlogPost.swift in Sources */,
 				424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */,
+				42438A4227D79E61005B79D7 /* ImagePicker.swift in Sources */,
 				42420D5A27C9FF7000DED18D /* BlogView.swift in Sources */,
 				42728C5A27C74B8200FAD307 /* FoodWasteFighterApp.swift in Sources */,
 			);
