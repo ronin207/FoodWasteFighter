@@ -9,7 +9,42 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.clover
+                .ignoresSafeArea()
+            
+            VStack(spacing: 20) {
+                Image("vegetables")
+                    .resizable()
+                    .scaledToFit()
+                
+                Text("Welcome!".uppercased())
+                    .fontSelection(type: .shadowsLight2, size: 40)
+                
+                Text("Ready to be a part of a community that fights food waste?")
+                    .fontSelection(type: .opensans, size: 15)
+                    .padding(30)
+                    .multilineTextAlignment(.center)
+                
+                Button(action: {
+                    
+                }) {
+                    HStack(spacing: 16) {
+                        Text("Sign in with Google")
+                        Image("google")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+                    .padding()
+                    .background(.white, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                }
+                
+                Image("children")
+                    .resizable()
+                    .scaledToFit()
+            }
+            .foregroundColor(.leaf)
+        }
     }
 }
 
