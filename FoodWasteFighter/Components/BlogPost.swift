@@ -45,8 +45,7 @@ struct BlogPost: View {
         }
         .padding(7)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-        .background(.ultraThinMaterial)
-        .cornerRadius(10)
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
     }
 }
 
