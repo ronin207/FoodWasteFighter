@@ -15,7 +15,7 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [.mint, .cyan]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                Color.clover.opacity(0.4)
                     .ignoresSafeArea()
                 
                 VStack(spacing: 10) {
