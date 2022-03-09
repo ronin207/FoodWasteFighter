@@ -25,6 +25,7 @@
 		428E62C127D919D800B38955 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 428E62C027D919D800B38955 /* FirebaseAuth */; };
 		428E62C427D91A1F00B38955 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 428E62C327D91A1F00B38955 /* GoogleSignIn */; };
 		428E62C627D91AA200B38955 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 428E62C527D91AA200B38955 /* GoogleService-Info.plist */; };
+		428E62C827D9236F00B38955 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E62C727D9236F00B38955 /* AuthenticationViewModel.swift */; };
 		42E863D327CB78A60094F288 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */; };
 		42E863D427CB78A60094F288 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */; };
 		42E863D527CB78A60094F288 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D227CB78A60094F288 /* OpenSans-Light.ttf */; };
@@ -50,6 +51,7 @@
 		42728C5D27C74B8300FAD307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42728C6027C74B8300FAD307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		428E62C527D91AA200B38955 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		428E62C727D9236F00B38955 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		42E863D227CB78A60094F288 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				424C9CCA27C88F83003627F2 /* TabItem.swift */,
 				42420D5727C9FD9A00DED18D /* BlogItem.swift */,
+				428E62C727D9236F00B38955 /* AuthenticationViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428E62C827D9236F00B38955 /* AuthenticationViewModel.swift in Sources */,
 				424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */,
 				424C9CE627C92258003627F2 /* Colors.swift in Sources */,
 				42E863D727CB7B810094F288 /* ProfileView.swift in Sources */,
