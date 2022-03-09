@@ -22,6 +22,7 @@
 		42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5B27C74B8200FAD307 /* ContentView.swift */; };
 		42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C5D27C74B8300FAD307 /* Assets.xcassets */; };
 		42728C6127C74B8300FAD307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C6027C74B8300FAD307 /* Preview Assets.xcassets */; };
+		428E62BE27D8F79600B38955 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E62BD27D8F79600B38955 /* LoginView.swift */; };
 		42E863D327CB78A60094F288 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */; };
 		42E863D427CB78A60094F288 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */; };
 		42E863D527CB78A60094F288 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D227CB78A60094F288 /* OpenSans-Light.ttf */; };
@@ -46,6 +47,7 @@
 		42728C5B27C74B8200FAD307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42728C5D27C74B8300FAD307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42728C6027C74B8300FAD307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		428E62BD27D8F79600B38955 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		42E863D227CB78A60094F288 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				42420D5927C9FF7000DED18D /* BlogView.swift */,
 				42E863D627CB7B810094F288 /* ProfileView.swift */,
 				421245E427D29A9E00D1708E /* MapView.swift */,
+				428E62BD27D8F79600B38955 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				42420D5627C9DDC300DED18D /* BlogPost.swift in Sources */,
 				424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */,
 				42438A4227D79E61005B79D7 /* ImagePicker.swift in Sources */,
+				428E62BE27D8F79600B38955 /* LoginView.swift in Sources */,
 				42420D5A27C9FF7000DED18D /* BlogView.swift in Sources */,
 				42728C5A27C74B8200FAD307 /* FoodWasteFighterApp.swift in Sources */,
 			);
