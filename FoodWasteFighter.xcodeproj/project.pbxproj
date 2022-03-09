@@ -22,6 +22,9 @@
 		42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5B27C74B8200FAD307 /* ContentView.swift */; };
 		42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C5D27C74B8300FAD307 /* Assets.xcassets */; };
 		42728C6127C74B8300FAD307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C6027C74B8300FAD307 /* Preview Assets.xcassets */; };
+		428E62C127D919D800B38955 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 428E62C027D919D800B38955 /* FirebaseAuth */; };
+		428E62C427D91A1F00B38955 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 428E62C327D91A1F00B38955 /* GoogleSignIn */; };
+		428E62C627D91AA200B38955 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 428E62C527D91AA200B38955 /* GoogleService-Info.plist */; };
 		42E863D327CB78A60094F288 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */; };
 		42E863D427CB78A60094F288 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */; };
 		42E863D527CB78A60094F288 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D227CB78A60094F288 /* OpenSans-Light.ttf */; };
@@ -46,6 +49,7 @@
 		42728C5B27C74B8200FAD307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42728C5D27C74B8300FAD307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42728C6027C74B8300FAD307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		428E62C527D91AA200B38955 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		42E863D227CB78A60094F288 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				428E62C127D919D800B38955 /* FirebaseAuth in Frameworks */,
+				428E62C427D91A1F00B38955 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				424C9CE127C8C0A7003627F2 /* Info.plist */,
+				428E62C527D91AA200B38955 /* GoogleService-Info.plist */,
 				42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */,
 				42728C5B27C74B8200FAD307 /* ContentView.swift */,
 				42420D5427C9DD5D00DED18D /* Views */,
@@ -170,6 +177,10 @@
 			dependencies = (
 			);
 			name = FoodWasteFighter;
+			packageProductDependencies = (
+				428E62C027D919D800B38955 /* FirebaseAuth */,
+				428E62C327D91A1F00B38955 /* GoogleSignIn */,
+			);
 			productName = FoodWasteFighter;
 			productReference = 42728C5627C74B8200FAD307 /* FoodWasteFighter.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +209,10 @@
 				Base,
 			);
 			mainGroup = 42728C4D27C74B8200FAD307;
+			packageReferences = (
+				428E62BF27D919D800B38955 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				428E62C227D91A1F00B38955 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 42728C5727C74B8200FAD307 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -213,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42728C6127C74B8300FAD307 /* Preview Assets.xcassets in Resources */,
+				428E62C627D91AA200B38955 /* GoogleService-Info.plist in Resources */,
 				424C9CDE27C8C080003627F2 /* OpenSans-Regular.ttf in Resources */,
 				42E863D527CB78A60094F288 /* OpenSans-Light.ttf in Resources */,
 				42E863D427CB78A60094F288 /* OpenSans-Bold.ttf in Resources */,
@@ -445,6 +461,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		428E62BF27D919D800B38955 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		428E62C227D91A1F00B38955 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		428E62C027D919D800B38955 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 428E62BF27D919D800B38955 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		428E62C327D91A1F00B38955 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 428E62C227D91A1F00B38955 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42728C4E27C74B8200FAD307 /* Project object */;
 }
