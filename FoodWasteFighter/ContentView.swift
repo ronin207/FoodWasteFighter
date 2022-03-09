@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var authenticationvm: AuthenticationViewModel
+    
     var body: some View {
-        TabBar()
+        switch authenticationvm.state {
+        case .signin:
+            TabBar()
+        case .signout:
+            LoginView()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AuthenticationViewModel())
     }
 }
