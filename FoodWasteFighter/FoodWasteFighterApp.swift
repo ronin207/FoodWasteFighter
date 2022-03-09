@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct FoodWasteFighterApp: App {
+    init() {
+        UINavigationBar.appearance().backgroundColor = UIColor.clear
+        UITextField.appearance().backgroundColor = UIColor(.white.opacity(0.4))
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+                    .navigationBarHidden(true)
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }

@@ -7,18 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421245E527D29A9E00D1708E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421245E427D29A9E00D1708E /* MapView.swift */; };
+		42420D5627C9DDC300DED18D /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5527C9DDC300DED18D /* BlogPost.swift */; };
+		42420D5827C9FD9A00DED18D /* BlogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5727C9FD9A00DED18D /* BlogItem.swift */; };
+		42420D5A27C9FF7000DED18D /* BlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42420D5927C9FF7000DED18D /* BlogView.swift */; };
+		42438A4227D79E61005B79D7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42438A4127D79E61005B79D7 /* ImagePicker.swift */; };
+		424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CC727C88DA4003627F2 /* TabBar.swift */; };
+		424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CCA27C88F83003627F2 /* TabItem.swift */; };
+		424C9CDE27C8C080003627F2 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */; };
+		424C9CE027C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424C9CDF27C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf */; };
+		424C9CE327C8C0E5003627F2 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CE227C8C0E5003627F2 /* Fonts.swift */; };
+		424C9CE627C92258003627F2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C9CE527C92258003627F2 /* Colors.swift */; };
 		42728C5A27C74B8200FAD307 /* FoodWasteFighterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */; };
 		42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42728C5B27C74B8200FAD307 /* ContentView.swift */; };
 		42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C5D27C74B8300FAD307 /* Assets.xcassets */; };
 		42728C6127C74B8300FAD307 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42728C6027C74B8300FAD307 /* Preview Assets.xcassets */; };
+		42E863D327CB78A60094F288 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */; };
+		42E863D427CB78A60094F288 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */; };
+		42E863D527CB78A60094F288 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42E863D227CB78A60094F288 /* OpenSans-Light.ttf */; };
+		42E863D727CB7B810094F288 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E863D627CB7B810094F288 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421245E427D29A9E00D1708E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		42420D5527C9DDC300DED18D /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		42420D5727C9FD9A00DED18D /* BlogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogItem.swift; sourceTree = "<group>"; };
+		42420D5927C9FF7000DED18D /* BlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogView.swift; sourceTree = "<group>"; };
+		42438A4127D79E61005B79D7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		424C9CC727C88DA4003627F2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		424C9CCA27C88F83003627F2 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		424C9CDF27C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ShadowsIntoLightTwo-Regular.ttf"; sourceTree = "<group>"; };
+		424C9CE127C8C0A7003627F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		424C9CE227C8C0E5003627F2 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		424C9CE527C92258003627F2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		42728C5627C74B8200FAD307 /* FoodWasteFighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodWasteFighter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteFighterApp.swift; sourceTree = "<group>"; };
 		42728C5B27C74B8200FAD307 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		42728C5D27C74B8300FAD307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42728C6027C74B8300FAD307 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		42E863D227CB78A60094F288 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		42E863D627CB7B810094F288 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +63,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42420D5427C9DD5D00DED18D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42420D5927C9FF7000DED18D /* BlogView.swift */,
+				42E863D627CB7B810094F288 /* ProfileView.swift */,
+				421245E427D29A9E00D1708E /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		424C9CC627C88D63003627F2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				424C9CC727C88DA4003627F2 /* TabBar.swift */,
+				42420D5527C9DDC300DED18D /* BlogPost.swift */,
+				42438A4127D79E61005B79D7 /* ImagePicker.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		424C9CC927C88F7A003627F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				424C9CCA27C88F83003627F2 /* TabItem.swift */,
+				42420D5727C9FD9A00DED18D /* BlogItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		424C9CDC27C8C050003627F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42E863D127CB78A50094F288 /* OpenSans-Bold.ttf */,
+				42E863D227CB78A60094F288 /* OpenSans-Light.ttf */,
+				42E863D027CB78A50094F288 /* OpenSans-SemiBold.ttf */,
+				424C9CDF27C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf */,
+				424C9CDD27C8C080003627F2 /* OpenSans-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		424C9CE427C921D5003627F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				424C9CE227C8C0E5003627F2 /* Fonts.swift */,
+				424C9CE527C92258003627F2 /* Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		42728C4D27C74B8200FAD307 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +132,14 @@
 		42728C5827C74B8200FAD307 /* FoodWasteFighter */ = {
 			isa = PBXGroup;
 			children = (
+				424C9CE127C8C0A7003627F2 /* Info.plist */,
 				42728C5927C74B8200FAD307 /* FoodWasteFighterApp.swift */,
 				42728C5B27C74B8200FAD307 /* ContentView.swift */,
+				42420D5427C9DD5D00DED18D /* Views */,
+				424C9CC927C88F7A003627F2 /* Models */,
+				424C9CC627C88D63003627F2 /* Components */,
+				424C9CE427C921D5003627F2 /* Extensions */,
+				424C9CDC27C8C050003627F2 /* Resources */,
 				42728C5D27C74B8300FAD307 /* Assets.xcassets */,
 				42728C5F27C74B8300FAD307 /* Preview Content */,
 			);
@@ -126,7 +213,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				42728C6127C74B8300FAD307 /* Preview Assets.xcassets in Resources */,
+				424C9CDE27C8C080003627F2 /* OpenSans-Regular.ttf in Resources */,
+				42E863D527CB78A60094F288 /* OpenSans-Light.ttf in Resources */,
+				42E863D427CB78A60094F288 /* OpenSans-Bold.ttf in Resources */,
+				42E863D327CB78A60094F288 /* OpenSans-SemiBold.ttf in Resources */,
 				42728C5E27C74B8300FAD307 /* Assets.xcassets in Resources */,
+				424C9CE027C8C08B003627F2 /* ShadowsIntoLightTwo-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424C9CC827C88DA4003627F2 /* TabBar.swift in Sources */,
+				424C9CE627C92258003627F2 /* Colors.swift in Sources */,
+				42E863D727CB7B810094F288 /* ProfileView.swift in Sources */,
+				421245E527D29A9E00D1708E /* MapView.swift in Sources */,
+				424C9CE327C8C0E5003627F2 /* Fonts.swift in Sources */,
 				42728C5C27C74B8200FAD307 /* ContentView.swift in Sources */,
+				42420D5827C9FD9A00DED18D /* BlogItem.swift in Sources */,
+				42420D5627C9DDC300DED18D /* BlogPost.swift in Sources */,
+				424C9CCB27C88F83003627F2 /* TabItem.swift in Sources */,
+				42438A4227D79E61005B79D7 /* ImagePicker.swift in Sources */,
+				42420D5A27C9FF7000DED18D /* BlogView.swift in Sources */,
 				42728C5A27C74B8200FAD307 /* FoodWasteFighterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +374,7 @@
 				DEVELOPMENT_TEAM = 4DVD7FVTR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodWasteFighter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +404,7 @@
 				DEVELOPMENT_TEAM = 4DVD7FVTR7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodWasteFighter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
