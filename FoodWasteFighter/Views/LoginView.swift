@@ -36,7 +36,10 @@ struct LoginView: View {
                             .frame(width: 30, height: 30)
                     }
                     .padding()
-                    .background(.white, in: RoundedRectangle(cornerRadius: 10, style: .continuous))
+                    .background(.white)
+                    .cornerRadius(10)
+                    .shadow(color: .leaf.opacity(0.3), radius: 2, x: -2, y: -2)
+                    .shadow(color: .leaf.opacity(0.3), radius: 2, x: 2, y: 2)
                 }
                 
                 Image("children")
