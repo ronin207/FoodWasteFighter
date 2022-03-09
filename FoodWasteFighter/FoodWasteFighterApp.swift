@@ -7,9 +7,12 @@
 
 import SwiftUI
 import Firebase
+import GoogleSignIn
 
 @main
 struct FoodWasteFighterApp: App {
+    @StateObject private var authenticationvm = AuthenticationViewModel()
+    
     init() {
         UINavigationBar.appearance().backgroundColor = UIColor.clear
         UITextField.appearance().backgroundColor = UIColor(.white.opacity(0.4))
@@ -20,6 +23,7 @@ struct FoodWasteFighterApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .environmentObject(authenticationvm)
                     .navigationBarHidden(true)
             }
             .navigationViewStyle(.stack)
