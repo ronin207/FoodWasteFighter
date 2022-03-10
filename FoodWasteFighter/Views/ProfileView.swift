@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 struct ProfileView: View {
+    @EnvironmentObject private var authenticationvm: AuthenticationViewModel
+    
     @State private var selectedAccounts: Posts = .own
     @State private var isPresented: Bool = false
+    
+    private let user = GIDSignIn.sharedInstance.currentUser
     var columns = Array(repeating: GridItem(.flexible()), count: 3)
     
     var body: some View {
@@ -19,13 +24,13 @@ struct ProfileView: View {
                     .ignoresSafeArea()
                 
                 VStack(spacing: 10) {
-                    Image(systemName: "person.crop.circle.badge.plus")
-                        .resizable()
-                        .symbolRenderingMode(.multicolor)
-                        .frame(width: 150, height: 135)
+                    NetworkImage(url: user?.profile?.imageURL(withDimension: 200))
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 150, height: 150, alignment: .center)
+                        .cornerRadius(10)
                     
                     VStack {
-                        Text("Navya Ann")
+                        Text(user?.profile?.name ?? "")
                             .fontSelection(type: .shadowsLight2, size: 50)
                         
                         Text("Member in Tokyo")
@@ -103,6 +108,16 @@ struct ProfileView: View {
                             
                         } header: { Text("About") }
                         
+                        Button(action: {
+                            authenticationvm.signOut()
+                        }) {
+                            Text("Sign Out")
+                                .frame(maxWidth: .infinity)
+                                .background(.white, in: RoundedRectangle(cornerRadius: 10))
+                        }
+                        .foregroundColor(.leaf)
+                        .padding()
+                        
                     }
                     .navigationTitle("Settings")
                 }
@@ -122,5 +137,23 @@ enum Posts: String, CaseIterable, Identifiable {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+            .environmentObject(AuthenticationViewModel())
+    }
+}
+
+struct NetworkImage: View {
+    let url: URL?
+    
+    var body: some View {
+        if let url = url, let data = try? Data(contentsOf: url), let uiImage = UIImage(data: data) {
+            Image(uiImage: uiImage)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+        } else {
+            Image(systemName: "person.crop.circle.badge.plus")
+                .resizable()
+                .symbolRenderingMode(.multicolor)
+                .frame(width: 150, height: 135)
+        }
     }
 }
