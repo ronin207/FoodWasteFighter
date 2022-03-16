@@ -81,48 +81,48 @@ struct ProfileView: View {
             }
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Image(systemName: "gear")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .onTapGesture {
-                            isPresented.toggle()
-                        }
+                    NavigationLink(destination: SettingsView()) {
+                        Image(systemName: "gear")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
                 }
             })
-            .sheet(isPresented: $isPresented) {
-                NavigationView {
-                    Form {
-                        Section {
-                            
-                        } header: { Text("Account") }
-                        
-                        Section {
-                            
-                        } header: { Text("Privacy") }
-                        
-                        Section {
-                            
-                        } header: { Text("Help") }
-                        
-                        Section {
-                            
-                        } header: { Text("About") }
-                        
-                        Button(action: {
-                            authenticationvm.signOut()
-                        }) {
-                            Text("Sign Out")
-                                .frame(maxWidth: .infinity)
-                                .background(.white, in: RoundedRectangle(cornerRadius: 10))
-                        }
-                        .foregroundColor(.leaf)
-                        .padding()
-                        
-                    }
-                    .navigationTitle("Settings")
-                }
-            }
         }
+    }
+}
+
+struct SettingsView: View {
+    @EnvironmentObject private var authenticationvm: AuthenticationViewModel
+    
+    var body: some View {
+        Form {
+            Section {
+                
+            } header: { Text("Account") }
+            
+            Section {
+                
+            } header: { Text("Privacy") }
+            
+            Section {
+                
+            } header: { Text("Help") }
+            
+            Section {
+                
+            } header: { Text("About") }
+            
+            Button(action: {
+                authenticationvm.signOut()
+            }) {
+                Text("Sign Out")
+                    .frame(maxWidth: .infinity)
+            }
+            .foregroundColor(.leaf)
+            
+        }
+        .navigationTitle("Settings")
     }
 }
 
