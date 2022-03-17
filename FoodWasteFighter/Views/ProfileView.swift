@@ -48,10 +48,10 @@ struct ProfileView: View {
                             .tag(Posts.own)
                         Text("Saved Posts")
                             .tag(Posts.saved)
-                        Text("Posts from followed accounts")
+                        Text("Followed Posts")
                             .tag(Posts.followed)
                     }
-                    .pickerStyle(.menu)
+                    .pickerStyle(.segmented)
                     .frame(maxWidth: .infinity)
                     .padding(7)
                     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 10))
@@ -89,40 +89,6 @@ struct ProfileView: View {
                 }
             })
         }
-    }
-}
-
-struct SettingsView: View {
-    @EnvironmentObject private var authenticationvm: AuthenticationViewModel
-    
-    var body: some View {
-        Form {
-            Section {
-                
-            } header: { Text("Account") }
-            
-            Section {
-                
-            } header: { Text("Privacy") }
-            
-            Section {
-                
-            } header: { Text("Help") }
-            
-            Section {
-                
-            } header: { Text("About") }
-            
-            Button(action: {
-                authenticationvm.signOut()
-            }) {
-                Text("Sign Out")
-                    .frame(maxWidth: .infinity)
-            }
-            .foregroundColor(.leaf)
-            
-        }
-        .navigationTitle("Settings")
     }
 }
 
